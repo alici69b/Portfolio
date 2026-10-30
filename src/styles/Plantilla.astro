@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Este es mi portfolio, donde puedes encontrar quién soy, qué sé y mis proyectos actuales."
+    />
+    <link rel="icon" type="image/svg+xml" href="/fotoAlicia.webp" />
+    <link rel="canonical" href={Astro.url} />
+    <meta name="theme-color" content="#005d7a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Portfolio - Alicia Alonso" />
+    <meta property="og:title" content="Portfolio - Alicia Alonso" />
+    <meta
+      property="og:description"
+      content="Este es mi portfolio, donde puedes encontrar quién soy, qué sé y mis proyectos actuales."
+    />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:image" content={new URL('/Proyecto-portfolio.webp', Astro.site)} />
+    <meta property="og:image:alt" content="Vista previa del portfolio de Alicia Alonso" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio - Alicia Alonso" />
+    <meta
+      name="twitter:description"
+      content="Este es mi portfolio, donde puedes encontrar quién soy, qué sé y mis proyectos actuales."
+    />
+    <meta name="twitter:image" content={new URL('/Proyecto-portfolio.webp', Astro.site)} />
+    <title>Portfolio - Alicia Alonso</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+</style>

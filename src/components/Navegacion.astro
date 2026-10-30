@@ -1,0 +1,130 @@
+<header
+      id="menu"
+      class="sticky top-0 z-50 border-b border-line/50 bg-night/85 backdrop-blur-xl"
+    >
+      <div
+        class="mx-auto flex h-[74px] w-[calc(100%_-_32px)] max-w-[1180px] items-center justify-between gap-5 sm:w-[calc(100%_-_40px)]"
+      >
+        <a
+          class="inline-flex items-center font-mono text-[1.02rem] font-medium tracking-[-0.03em] text-fg"
+          href="#inicio"
+          aria-label="Alicia Alonso, ir al inicio"
+        >
+          <span class="text-coral" aria-hidden="true">&lt;</span><span>Alicia</span><span
+            class="w-[0.34em]"
+            aria-hidden="true"
+          ></span><span class="text-turquoise" aria-hidden="true">/</span><span
+            class="text-coral"
+            aria-hidden="true"
+            >&gt;</span
+          >
+        </a>
+
+        <nav class="hidden lg:block" aria-label="Navegación principal">
+          <ul class="flex items-center gap-0.5">
+            <li>
+              <a
+                class="group relative inline-block rounded-lg px-3 py-2.5 text-[0.88rem] font-medium text-fg-muted transition hover:bg-violet/10 hover:text-fg"
+                href="#sobre-mi"
+                >Sobre mí<span
+                  class="absolute inset-x-3 bottom-1 h-px origin-left scale-x-0 bg-turquoise transition-transform duration-200 group-hover:scale-x-100"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                class="group relative inline-block rounded-lg px-3 py-2.5 text-[0.88rem] font-medium text-fg-muted transition hover:bg-violet/10 hover:text-fg"
+                href="#tecnologias"
+                >Tecnologías<span
+                  class="absolute inset-x-3 bottom-1 h-px origin-left scale-x-0 bg-turquoise transition-transform duration-200 group-hover:scale-x-100"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                class="group relative inline-block rounded-lg px-3 py-2.5 text-[0.88rem] font-medium text-fg-muted transition hover:bg-violet/10 hover:text-fg"
+                href="#proyecto"
+                >Proyecto<span
+                  class="absolute inset-x-3 bottom-1 h-px origin-left scale-x-0 bg-turquoise transition-transform duration-200 group-hover:scale-x-100"
+                ></span
+              ></a>
+            </li>
+            <li>
+              <a
+                class="group relative inline-block rounded-lg px-3 py-2.5 text-[0.88rem] font-medium text-fg-muted transition hover:bg-violet/10 hover:text-fg"
+                href="#contacto"
+                >Contacto<span
+                  class="absolute inset-x-3 bottom-1 h-px origin-left scale-x-0 bg-turquoise transition-transform duration-200 group-hover:scale-x-100"
+                ></span
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <a
+          class="inline-flex h-[46px] w-[46px] items-center justify-center rounded-[11px] border border-line bg-surface text-fg transition hover:border-turquoise/50 hover:bg-surface-2 lg:hidden"
+          href="#menu"
+          aria-label="Abrir menú de navegación"
+          aria-controls="mobile-panel"
+        >
+          <span class="relative h-[13px] w-[19px]" aria-hidden="true">
+            <span
+              class="menu-bar-1 absolute left-0 top-[1px] h-[1.5px] w-[19px] rounded-sm bg-current transition-transform duration-200"
+            ></span>
+            <span
+              class="menu-bar-2 absolute left-0 top-[10px] h-[1.5px] w-[19px] rounded-sm bg-current transition-transform duration-200"
+            ></span>
+          </span>
+        </a>
+      </div>
+
+      <div
+        id="mobile-panel"
+        class="mobile-panel absolute inset-x-4 top-[73px] z-50 rounded-2xl border border-line bg-surface-2/95 p-2.5 shadow-[0_26px_60px_-26px_rgba(0,0,0,0.9)] backdrop-blur-xl"
+      >
+        <div class="flex items-center justify-between px-2 pb-2 pt-1">
+          <span
+            class="font-mono text-[0.65rem] uppercase tracking-[0.12em] text-fg-muted"
+            >Navegación</span
+          >
+          <a
+            class="rounded-md px-2 py-1 font-mono text-[0.7rem] text-fg-muted transition hover:text-turquoise"
+            href="#contenido"
+            aria-label="Cerrar menú"
+            >Cerrar ×</a
+          >
+        </div>
+        <nav aria-label="Navegación móvil">
+          <ul class="grid gap-0.5">
+            <li>
+              <a
+                class="flex min-h-12 items-center justify-between rounded-lg px-3 py-2.5 text-[0.96rem] font-medium text-fg transition hover:bg-turquoise/10 hover:text-turquoise-soft"
+                href="#sobre-mi"
+                >Sobre mí <span class="font-mono text-xs text-fg-muted" aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex min-h-12 items-center justify-between rounded-lg px-3 py-2.5 text-[0.96rem] font-medium text-fg transition hover:bg-turquoise/10 hover:text-turquoise-soft"
+                href="#tecnologias"
+                >Tecnologías <span class="font-mono text-xs text-fg-muted" aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex min-h-12 items-center justify-between rounded-lg px-3 py-2.5 text-[0.96rem] font-medium text-fg transition hover:bg-turquoise/10 hover:text-turquoise-soft"
+                href="#proyecto"
+                >Proyecto <span class="font-mono text-xs text-fg-muted" aria-hidden="true">↗</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="flex min-h-12 items-center justify-between rounded-lg px-3 py-2.5 text-[0.96rem] font-medium text-fg transition hover:bg-turquoise/10 hover:text-turquoise-soft"
+                href="#contacto"
+                >Contacto <span class="font-mono text-xs text-fg-muted" aria-hidden="true">↗</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
